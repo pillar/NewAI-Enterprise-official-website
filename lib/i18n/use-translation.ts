@@ -3,7 +3,9 @@
 import { create } from 'zustand';
 import { translations } from './translations';
 
-type Language = 'en' | 'zh';
+type Language = 'en' | 'zh' | 'zh-TW';
+
+type TranslationValue = string | Record<string, any>;
 
 interface I18nStore {
   language: Language;
@@ -17,16 +19,16 @@ export const useI18n = create<I18nStore>((set, get) => ({
   t: (key) => {
     const { language } = get();
     const keys = key.split('.');
-    let value = translations[language];
+    let value: TranslationValue = translations[language];
     
     for (const k of keys) {
-      if (value?.[k]) {
+      if (typeof value === 'object' && value !== null && k in value) {
         value = value[k];
       } else {
         return key;
       }
     }
     
-    return value as string;
+    return typeof value === 'string' ? value : key;
   },
 }));
