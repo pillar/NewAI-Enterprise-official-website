@@ -16,7 +16,7 @@ export function Navbar() {
         <Link href="/" className="flex items-center space-x-2">
           <Image
             src="/images/logo.png"
-            alt="Itusi Logo"
+            alt="NewAI Logo"
             width={32}
             height={32}
             className="transition-opacity duration-300 hover:opacity-80"
@@ -27,7 +27,7 @@ export function Navbar() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            ITUSI
+            NEWAI
           </motion.span>
         </Link>
         
