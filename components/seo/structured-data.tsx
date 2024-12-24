@@ -8,28 +8,28 @@ export function StructuredData() {
   const websiteSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'ITUSI',
+    name: 'NEWAI',
     alternateName: t('meta.alternateName'),
-    url: 'https://itusi.ai',
+    url: 'https://newailabs.com',
     description: t('meta.description'),
     sameAs: [
-      'https://twitter.com/zyailive',
-      'https://github.com/321208008',
-      'https://www.facebook.com/zyailive'
+      'https://twitter.com/newailabs',
+      'https://github.com/newailabs',
+      'https://www.facebook.com/newailabs'
     ]
   };
 
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'ITUSI',
-    url: 'https://itusi.ai',
-    logo: 'https://itusi.ai/images/logo.png',
+    name: 'NEWAI',
+    url: 'https://newailabs.com',
+    logo: 'https://newailabs.com/images/logo.png',
     description: t('meta.description'),
     sameAs: [
-      'https://twitter.com/zyailive',
-      'https://github.com/321208008',
-      'https://www.facebook.com/zyailive'
+      'https://twitter.com/newailabs',
+      'https://github.com/newailabs',
+      'https://www.facebook.com/newailabs'
     ]
   };
 
