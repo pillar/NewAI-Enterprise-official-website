@@ -20,7 +20,7 @@ export function MetaTags({ title, description, image }: MetaTagsProps) {
   const pageTitle = title || defaultTitle;
   const pageDescription = description || defaultDescription;
   const pageImage = image || defaultImage;
-  const canonicalUrl = `https://itusi.ai${pathname}`;
+  const canonicalUrl = `https://newailabs.com${pathname}`;
 
   return (
     <>
@@ -35,20 +35,20 @@ export function MetaTags({ title, description, image }: MetaTagsProps) {
       <meta property="og:image" content={pageImage} />
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:type" content="website" />
-      <meta property="og:site_name" content="ITUSI" />
+      <meta property="og:site_name" content="NEWAI" />
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={pageTitle} />
       <meta name="twitter:description" content={pageDescription} />
       <meta name="twitter:image" content={pageImage} />
-      <meta name="twitter:creator" content="@zyailive" />
+      <meta name="twitter:creator" content="@newailabs" />
 
       {/* 其他必要的 Meta 标签 */}
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="theme-color" content="#F97316" />
       <meta name="keywords" content={t('meta.keywords')} />
-      <meta name="author" content="ITUSI Team" />
+      <meta name="author" content="NEWAI Team" />
     </>
   );
 }
